@@ -21,8 +21,8 @@ export const featuredProjectData = {
     author: "SERTÃO SEM FRONTEIRAS",
   },
   image: {
-    src: "/images/projects/sertao-boy.jpg",
-    alt: "Menino sertanejo sorridente - Projeto Sertão sem Fronteiras",
+    src: "/images/image03.png",
+    alt: "Crianças sorridentes - Projeto Sertão sem Fronteiras",
     isIllustrative: true,
   },
 };
@@ -33,7 +33,7 @@ export const actionCardsData: ActionCardItem[] = [
     title: "Amparo à Criança",
     iconBgColor: "bg-category-child",
     iconName: "GraduationCap",
-    imageSrc: "/images/cards/amparo-crianca.jpg",
+    imageSrc: "/images/img1.png",
     imageAlt: "Crianças em ambiente escolar e aprendizado",
     features: [
       "Creche com pedagogos",
@@ -47,7 +47,7 @@ export const actionCardsData: ActionCardItem[] = [
     title: "Jovens e Adolescentes",
     iconBgColor: "bg-category-youth",
     iconName: "Monitor",
-    imageSrc: "/images/cards/jovens-tecnologia.jpg",
+    imageSrc: "/images/img2.png",
     imageAlt: "Jovens em sala de tecnologia e inclusão digital",
     features: [
       "Laboratório de informática",
@@ -61,7 +61,7 @@ export const actionCardsData: ActionCardItem[] = [
     title: "Terceira Idade",
     iconBgColor: "bg-category-elderly",
     iconName: "UsersRound",
-    imageSrc: "/images/cards/terceira-idade.jpg",
+    imageSrc: "/images/img3.png",
     imageAlt: "Idosa acolhida e sorridente no sertão",
     features: [
       "Acompanhamento e acolhimento",

@@ -38,10 +38,10 @@ export const Navbar: React.FC = () => {
       className="relative w-full bg-white transition-shadow"
       aria-label="Navegação Principal"
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-3 sm:px-6 lg:px-8 py-2.5 sm:py-3">
         {/* Logotipo Oficial */}
         <div className="flex-shrink-0">
-          <Logo width={280} height={70} className="max-w-[220px] sm:max-w-[280px]" />
+          <Logo width={280} height={70} className="max-w-[190px] xs:max-w-[230px] sm:max-w-[280px]" />
         </div>
 
         {/* Menu Desktop */}

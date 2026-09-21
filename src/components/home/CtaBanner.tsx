@@ -57,13 +57,13 @@ export const CtaBanner: React.FC = () => {
           </div>
 
           {/* Lado Direito: Botão Primário Dourado e Link Secundário */}
-          <div className="flex flex-col items-center sm:items-end justify-center shrink-0 gap-3">
+          <div className="flex flex-col items-center sm:items-end justify-center shrink-0 gap-3 w-full sm:w-auto">
             <Link
               href={primaryAction.href}
-              className="inline-flex items-center gap-2.5 rounded-full bg-brand-gold px-8 py-3.5 text-sm sm:text-base font-bold text-brand-navy shadow-lg transition-all duration-200 hover:bg-brand-gold-hover hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-brand-navy cursor-pointer"
+              className="inline-flex items-center justify-center gap-2.5 rounded-full bg-brand-gold px-8 py-3.5 text-sm sm:text-base font-bold text-brand-navy shadow-lg transition-all duration-200 hover:bg-brand-gold-hover hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 focus:ring-offset-brand-navy cursor-pointer w-full sm:w-auto text-center"
             >
               <span>{primaryAction.text}</span>
-              <ArrowRight className="h-4 w-4 stroke-[2.5]" aria-hidden="true" />
+              <ArrowRight className="h-4 w-4 stroke-[2.5] shrink-0" aria-hidden="true" />
             </Link>
             
             <Link

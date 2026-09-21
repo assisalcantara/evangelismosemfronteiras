@@ -32,10 +32,10 @@ export const TopBar: React.FC = () => {
 
   return (
     <div className="w-full border-b border-slate-100 bg-white text-xs text-slate-600">
-      <div className="mx-auto flex max-w-7xl items-center justify-end px-4 py-2 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-6">
+      <div className="mx-auto flex max-w-7xl items-center justify-end px-3 sm:px-6 lg:px-8 py-1.5 sm:py-2">
+        <div className="flex items-center gap-3 sm:gap-6">
           {/* Slogan Oficial */}
-          <span className="hidden text-xs font-normal text-slate-500 sm:inline-block">
+          <span className="hidden text-xs font-normal text-slate-500 md:inline-block">
             {siteConfig.slogan}
           </span>
 

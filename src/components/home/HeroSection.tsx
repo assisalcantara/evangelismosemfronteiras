@@ -36,34 +36,34 @@ export const HeroSection: React.FC = () => {
           </div>
 
           {/* Título Principal */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.12]">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white tracking-tight leading-[1.15] sm:leading-[1.12]">
             {hero.titlePrefix}{" "}
             <span className="text-brand-gold">{hero.titleHighlight}</span>{" "}
             {hero.titleSuffix}
           </h1>
 
           {/* Texto Descritivo Institucional */}
-          <p className="mt-4 sm:mt-6 text-base sm:text-lg text-slate-100 font-normal leading-relaxed max-w-xl">
+          <p className="mt-3.5 sm:mt-6 text-sm sm:text-lg text-slate-100 font-normal leading-relaxed max-w-xl">
             {hero.description}
           </p>
 
           {/* Botões de Ação (CTAs) */}
-          <div className="mt-8 sm:mt-10 flex flex-wrap items-center gap-4">
+          <div className="mt-7 sm:mt-10 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
             <Link
               href={hero.primaryCta.href}
-              className="inline-flex items-center gap-2.5 rounded-full bg-brand-gold px-6 py-3.5 text-sm sm:text-base font-bold text-brand-navy shadow-lg transition-all duration-200 hover:bg-brand-gold-hover hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 cursor-pointer"
+              className="inline-flex justify-center items-center gap-2.5 rounded-full bg-brand-gold px-6 py-3.5 text-sm sm:text-base font-bold text-brand-navy shadow-lg transition-all duration-200 hover:bg-brand-gold-hover hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-gold focus:ring-offset-2 cursor-pointer text-center"
             >
-              <Heart className="h-4 w-4 fill-brand-navy text-brand-navy" aria-hidden="true" />
+              <Heart className="h-4 w-4 fill-brand-navy text-brand-navy shrink-0" aria-hidden="true" />
               <span>{hero.primaryCta.text}</span>
-              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
             </Link>
 
             <Link
               href={hero.secondaryCta.href}
-              className="inline-flex items-center gap-2 rounded-full border border-white/80 bg-black/25 backdrop-blur-xs px-6 py-3.5 text-sm sm:text-base font-semibold text-white transition-all duration-200 hover:bg-white/20 hover:border-white focus:outline-none focus:ring-2 focus:ring-white cursor-pointer"
+              className="inline-flex justify-center items-center gap-2 rounded-full border border-white/80 bg-black/25 backdrop-blur-xs px-6 py-3.5 text-sm sm:text-base font-semibold text-white transition-all duration-200 hover:bg-white/20 hover:border-white focus:outline-none focus:ring-2 focus:ring-white cursor-pointer text-center"
             >
               <span>{hero.secondaryCta.text}</span>
-              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
             </Link>
           </div>
 

@@ -40,7 +40,7 @@ export const MissionFieldSection: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
               
               {/* Bloco de Texto e Botão de Ação */}
-              <div className="md:col-span-7 flex flex-col items-start">
+              <div className="md:col-span-7 flex flex-col items-center text-center md:items-start md:text-left">
                 <span className="text-xs sm:text-sm font-bold tracking-widest text-brand-blue uppercase">
                   {badge}
                 </span>
@@ -56,13 +56,13 @@ export const MissionFieldSection: React.FC = () => {
                   {description}
                 </p>
 
-                <div className="mt-6">
+                <div className="mt-6 w-full sm:w-auto flex justify-center md:justify-start">
                   <Link
                     href={cta.href}
-                    className="inline-flex items-center gap-2 rounded-full bg-brand-blue px-5 py-3 text-xs sm:text-sm font-bold text-white shadow-md transition-all duration-200 hover:bg-brand-navy hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 cursor-pointer"
+                    className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-blue px-5 py-3 text-xs sm:text-sm font-bold text-white shadow-md transition-all duration-200 hover:bg-brand-navy hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-blue focus:ring-offset-2 cursor-pointer w-full sm:w-auto"
                   >
                     <span>{cta.text}</span>
-                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                    <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
                   </Link>
                 </div>
               </div>

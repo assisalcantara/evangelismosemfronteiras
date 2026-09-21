@@ -52,7 +52,7 @@ export const FeaturedProject: React.FC = () => {
           </div>
 
           {/* Coluna 2: Título Editorial, Descrição e Botão de Ação */}
-          <div className="lg:col-span-4 flex flex-col items-start justify-center">
+          <div className="lg:col-span-4 flex flex-col items-center text-center lg:items-start lg:text-left justify-center">
             <h2
               id="featured-project-heading"
               className="text-2xl sm:text-3xl font-black tracking-tight text-brand-navy leading-tight"
@@ -65,13 +65,13 @@ export const FeaturedProject: React.FC = () => {
               {description}
             </p>
 
-            <div className="mt-6">
+            <div className="mt-6 w-full sm:w-auto flex justify-center lg:justify-start">
               <Link
                 href={cta.href}
-                className="inline-flex items-center gap-2 rounded-full bg-brand-navy px-6 py-3 text-xs sm:text-sm font-bold text-white shadow-md transition-all duration-200 hover:bg-brand-navy-light hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 cursor-pointer"
+                className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-navy px-6 py-3 text-xs sm:text-sm font-bold text-white shadow-md transition-all duration-200 hover:bg-brand-navy-light hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-navy focus:ring-offset-2 cursor-pointer w-full sm:w-auto"
               >
                 <span>{cta.text}</span>
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />
               </Link>
             </div>
           </div>
