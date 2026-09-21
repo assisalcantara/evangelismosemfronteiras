@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-script: var(--font-caveat), cursive, sans-serif;
+
+  /* Cores Institucionais Principais */
+  --color-brand-navy: #0D2A4A;
+  --color-brand-navy-dark: #0A1F36;
+  --color-brand-navy-light: #163B63;
+  --color-brand-blue: #1B5E99;
+  --color-brand-blue-light: #EBF4FC;
+  --color-brand-blue-soft: #F0F6FB;
+  
+  /* Cores de Destaque / Ação */
+  --color-brand-gold: #E5A93C;
+  --color-brand-gold-hover: #D8972E;
+  --color-brand-gold-light: #FDF7EC;
+
+  /* Cores de Categorias / Frentes Sociais */
+  --color-category-child: #E67E22;
+  --color-category-youth: #2980B9;
+  --color-category-elderly: #27AE60;
+  --color-category-social: #E74C3C;
+
+  /* Superfícies e Bordas Neutras */
+  --color-surface-card: #FFFFFF;
+  --color-surface-subtle: #F8FAFC;
+  --color-border-subtle: #E2E8F0;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FFFFFF;
+  --foreground: #1E293B;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
